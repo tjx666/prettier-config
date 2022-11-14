@@ -2,17 +2,21 @@
     "name": "@yutengjing/prettier-config",
     "version": "1.0.0",
     "description": "my personal prettier config",
+    "packageManager": "pnpm@7.15.0",
+    "author": {
+        "name": "YuTengjing",
+        "email": "ytj2713151713@gmail.com",
+        "url": "https://github.com/tjx666"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/tjx666/prettier-config",
     "keywords": [
         "prettier",
         "prettier-config",
         "package-json"
     ],
-    "homepage": "https://github.com/tjx666/prettier-config",
-    "license": "MIT",
-    "author": {
-        "name": "YuTengjing",
-        "email": "ytj2713151713@gmail.com",
-        "url": "https://github.com/tjx666"
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
     },
     "main": "index.js",
     "files": [
@@ -22,19 +26,14 @@
         "preinstall": "npx only-allow pnpm",
         "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
     },
+    "peerDependencies": {
+        "prettier": "^2.7.1"
+    },
     "dependencies": {
-        "@prettier/plugin-xml": "^2.2.0",
-        "prettier-plugin-packagejson": "^2.3.0"
+        "@prettier/plugin-xml": "^2.2.0"
     },
     "devDependencies": {
         "bumpp": "^8.2.1",
         "prettier": "^2.7.1"
-    },
-    "peerDependencies": {
-        "prettier": "^2.7.1"
-    },
-    "packageManager": "pnpm@7.15.0",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
     }
 }

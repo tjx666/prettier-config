@@ -6,10 +6,7 @@ module.exports = {
     singleQuote: true,
     tabWidth: 4,
     trailingComma: 'all',
-    plugins: [
-        require.resolve('@prettier/plugin-xml'),
-        require.resolve('prettier-plugin-packagejson'),
-    ],
+    plugins: [require.resolve('@prettier/plugin-xml')],
     overrides: [
         {
             files: '*.svg',
