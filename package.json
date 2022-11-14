@@ -24,6 +24,7 @@
     ],
     "scripts": {
         "preinstall": "npx only-allow pnpm",
+        "test": "mocha test/*.test.js",
         "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
     },
     "peerDependencies": {
@@ -33,7 +34,9 @@
         "@prettier/plugin-xml": "^2.2.0"
     },
     "devDependencies": {
+        "@types/node": "^18.11.9",
         "bumpp": "^8.2.1",
+        "mocha": "^10.1.0",
         "prettier": "^2.7.1"
     }
 }

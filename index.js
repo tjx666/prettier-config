@@ -15,16 +15,8 @@ module.exports = {
             },
         },
         {
-            files: '*.md',
-            options: {
-                tabWidth: 2,
-            },
-        },
-        {
-            files: '*.yaml',
-            options: {
-                tabWidth: 2,
-            },
+            files: ['*.{yml,yaml,md}'],
+            options: { tabWidth: 2 },
         },
     ],
 };
