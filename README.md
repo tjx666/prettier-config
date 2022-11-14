@@ -1,5 +1,7 @@
 # @yutengjing/prettier-config
 
+![npm (scoped)](https://img.shields.io/npm/v/@yutengjing/prettier-config) ![test](https://github.com/tjx666/prettier-config/actions/workflows/test.yml/badge.svg)
+
 my personal prettier config
 
 ## Usage
