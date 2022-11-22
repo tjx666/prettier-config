@@ -1,6 +1,6 @@
 # @yutengjing/prettier-config
 
-![npm (scoped)](https://img.shields.io/npm/v/@yutengjing/prettier-config) ![test](https://github.com/tjx666/prettier-config/actions/workflows/test.yml/badge.svg)
+[![npm (scoped)](https://img.shields.io/npm/v/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![npm](https://img.shields.io/npm/dm/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![test](https://github.com/tjx666/prettier-config/actions/workflows/test.yml/badge.svg)](https://github.com/tjx666/prettier-config/actions/workflows/test.yml)
 
 my personal prettier config
 
