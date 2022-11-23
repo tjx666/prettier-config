@@ -5,7 +5,7 @@ specifiers:
   '@types/node': ^18.11.9
   bumpp: ^8.2.1
   mocha: ^10.1.0
-  prettier: ^2.7.1
+  prettier: ^2.8.0
 
 dependencies:
   '@prettier/plugin-xml': 2.2.0
@@ -14,7 +14,7 @@ devDependencies:
   '@types/node': 18.11.9
   bumpp: 8.2.1
   mocha: 10.1.0
-  prettier: 2.7.1
+  prettier: 2.8.0
 
 packages:
 
@@ -53,7 +53,7 @@ packages:
     resolution: {integrity: sha512-UWRmygBsyj4bVXvDiqSccwT1kmsorcwQwaIy30yVh8T+Gspx4OlC0shX1y+ZuwXZvgnafmpRYKks0bAu9urJew==}
     dependencies:
       '@xml-tools/parser': 1.0.11
-      prettier: 2.7.1
+      prettier: 2.8.0
     dev: false
 
   /@types/node/18.11.9:
@@ -541,8 +541,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
 
