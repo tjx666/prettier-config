@@ -1,6 +1,6 @@
 # @yutengjing/prettier-config
 
-[![npm (scoped)](https://img.shields.io/npm/v/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![npm](https://img.shields.io/npm/dm/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![test](https://github.com/tjx666/prettier-config/actions/workflows/test.yml/badge.svg)](https://github.com/tjx666/prettier-config/actions/workflows/test.yml)
+[![version](https://img.shields.io/npm/v/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![downloads](https://img.shields.io/npm/dm/@yutengjing/prettier-config)](https://www.npmjs.com/package/@yutengjing/prettier-config) [![test](https://github.com/tjx666/prettier-config/actions/workflows/test.yml/badge.svg)](https://github.com/tjx666/prettier-config/actions/workflows/test.yml)
 
 my personal prettier config
 
@@ -8,11 +8,18 @@ my personal prettier config
 
 ### Install
 
-```sh
-npm install -D @yutengjing/prettier-config
+```shell
+# npm
+npm add -D @yutengjing/prettier-config
 
 # pnpm
 pnpm add -D @yutengjing/prettier-config
+
+# yarn
+yarn add -D @yutengjing/prettier-config
+
+# bun
+bun add -d @yutengjing/prettier-config
 ```
 
 ### Config .prettierrc.js
@@ -31,3 +38,7 @@ module.exports = {
   semi: false,
 };
 ```
+
+## Related
+
+- [@yutengjing/eslint-config](https://github.com/tjx666/eslint-config/tree/main)
