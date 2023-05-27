@@ -2,7 +2,6 @@
     "name": "@yutengjing/prettier-config",
     "version": "0.0.1",
     "description": "my personal prettier config",
-    "packageManager": "pnpm@7.26.0",
     "author": {
         "name": "YuTengjing",
         "email": "ytj2713151713@gmail.com",
@@ -29,15 +28,16 @@
         "release": "bumpp -c \"release: v%s\" package.json && pnpm publish"
     },
     "peerDependencies": {
-        "prettier": "^2.8.3"
+        "prettier": "^2.8.8"
     },
     "dependencies": {
-        "@prettier/plugin-xml": "^2.2.0"
+        "@prettier/plugin-xml": "^2.2.0",
+        "prettier-plugin-jsdoc": "^0.4.2"
     },
     "devDependencies": {
-        "@types/node": "^18.11.18",
-        "bumpp": "^8.2.1",
+        "@types/node": "^18.16.16",
+        "bumpp": "^9.1.0",
         "mocha": "^10.2.0",
-        "prettier": "^2.8.3"
+        "prettier": "^2.8.8"
     }
 }
