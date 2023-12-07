@@ -1,13 +1,21 @@
 const plugins = [
+    // https://github.com/un-ts/prettier/issues/276
+    // 'prettier-plugin-autocorrect',
+
+    // https://github.com/prettier/plugin-xml
     '@prettier/plugin-xml',
+    // https://github.com/hosseinmd/prettier-plugin-jsdoc
+    'prettier-plugin-jsdoc',
+
     // some plugins maybe added in the future
-    // https://github.com/hosseinmd/prettier-plugin-jsdoc/issues/135
     // https://github.com/un-ts/prettier/tree/master/packages/sh
     // https://github.com/un-ts/prettier/tree/master/packages/pkg
-    // https://github.com/un-ts/prettier/tree/master/packages/autocorrect
 ];
 
 module.exports = {
+    plugins: plugins.map((plugin) => require.resolve(plugin)),
+
+    // official options
     endOfLine: 'auto',
     printWidth: 100,
     quoteProps: 'consistent',
@@ -15,7 +23,10 @@ module.exports = {
     singleQuote: true,
     tabWidth: 4,
     trailingComma: 'all',
-    plugins: plugins.map((plugin) => require.resolve(plugin)),
+
+    // plugins options
+    jsdocCommentLineStrategy: 'keep',
+
     overrides: [
         // https://github.com/prettier/prettier/issues/5322#issuecomment-1276302630
         {
