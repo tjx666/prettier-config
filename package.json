@@ -12,7 +12,10 @@
     "keywords": [
         "prettier",
         "prettier-config",
-        "prettier-plugin"
+        "prettier-plugin",
+        "jsdoc",
+        "xml",
+        "svg"
     ],
     "publishConfig": {
         "registry": "https://registry.npmjs.org/",
@@ -23,21 +26,20 @@
         "index.js"
     ],
     "scripts": {
-        "preinstall": "npx only-allow pnpm",
         "test": "mocha test/*.test.js",
         "release": "bumpp -c \"release: v%s\" package.json && pnpm publish"
     },
     "peerDependencies": {
-        "prettier": "^2.8.8"
+        "prettier": "^3.1.0"
     },
     "dependencies": {
-        "@prettier/plugin-xml": "^2.2.0",
-        "prettier-plugin-jsdoc": "^0.4.2"
+        "@prettier/plugin-xml": "^3.2.2",
+        "prettier-plugin-jsdoc": "^1.1.1"
     },
     "devDependencies": {
-        "@types/node": "^18.16.16",
-        "bumpp": "^9.1.0",
+        "@types/node": "^20.10.4",
+        "bumpp": "^9.2.0",
         "mocha": "^10.2.0",
-        "prettier": "^2.8.8"
+        "prettier": "^3.1.0"
     }
 }
