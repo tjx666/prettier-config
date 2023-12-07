@@ -1,6 +1,6 @@
 {
     "name": "@yutengjing/prettier-config",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "my personal prettier config",
     "author": {
         "name": "YuTengjing",
