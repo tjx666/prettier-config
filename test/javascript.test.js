@@ -3,9 +3,9 @@ const prettier = require('prettier');
 const options = require('../index');
 
 function testFormat(source, result) {
-    return () => {
+    return async () => {
         assert.strictEqual(
-            prettier.format(source, {
+            await prettier.format(source, {
                 ...options,
                 parser: 'babel',
             }),
@@ -73,6 +73,22 @@ it(
     a: 'a',
     b: 'b',
 };
+`,
+    ),
+);
+
+it(
+    'pretty jsdoc',
+    testFormat(
+        `/**
+*   @param    {Object}  a
+*/
+function f(a){}
+`,
+        `/**
+* @param {Object} a
+*/
+function f(a) {}
 `,
     ),
 );

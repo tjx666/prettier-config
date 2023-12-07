@@ -3,9 +3,9 @@ const prettier = require('prettier');
 const options = require('../index');
 
 function testFormat(source, result) {
-    return () => {
+    return async () => {
         assert.strictEqual(
-            prettier.format(source, {
+            await prettier.format(source, {
                 ...options,
                 parser: 'markdown',
                 tabWidth: 2,
@@ -27,3 +27,5 @@ it(
 `,
     ),
 );
+
+// it('autocorrect', testFormat('apple是一家伟大的互联网公司', 'apple 是一家伟大的互联网公司'));

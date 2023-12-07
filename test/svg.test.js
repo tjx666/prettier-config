@@ -3,9 +3,9 @@ const prettier = require('prettier');
 const options = require('../index');
 
 function testFormat(source, result) {
-    return () => {
+    return async () => {
         assert.strictEqual(
-            prettier.format(source, {
+            await prettier.format(source, {
                 ...options,
                 parser: 'html',
             }),
