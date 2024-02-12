@@ -20,6 +20,7 @@ const plugins = [
     'prettier-plugin-tailwindcss',
 ];
 
+/** @type {import('prettier').Config} */
 module.exports = {
     plugins: plugins.map((plugin) => require.resolve(plugin)),
 
