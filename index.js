@@ -4,12 +4,20 @@ const plugins = [
 
     // https://github.com/prettier/plugin-xml
     '@prettier/plugin-xml',
+
     // https://github.com/hosseinmd/prettier-plugin-jsdoc
     'prettier-plugin-jsdoc',
+
+    // https://github.com/withastro/prettier-plugin-astro
+    'prettier-plugin-astro',
 
     // some plugins maybe added in the future
     // https://github.com/un-ts/prettier/tree/master/packages/sh
     // https://github.com/un-ts/prettier/tree/master/packages/pkg
+
+    // at last
+    // https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins
+    'prettier-plugin-tailwindcss',
 ];
 
 module.exports = {
@@ -38,6 +46,12 @@ module.exports = {
         {
             files: ['*.{yml,yaml,md}'],
             options: { tabWidth: 2 },
+        },
+        {
+            files: '*.astro',
+            options: {
+                parser: 'astro',
+            },
         },
     ],
 };
