@@ -86,8 +86,8 @@ it(
 function f(a){}
 `,
         `/**
-* @param {Object} a
-*/
+ * @param {Object} a
+ */
 function f(a) {}
 `,
     ),
