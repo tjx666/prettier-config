@@ -1,3 +1,12 @@
+function isInstalled(pkg) {
+    try {
+        require.resolve(pkg);
+    } catch {
+        return false;
+    }
+    return true;
+}
+
 const plugins = [
     // https://github.com/un-ts/prettier/issues/276
     // 'prettier-plugin-autocorrect',
@@ -8,20 +17,13 @@ const plugins = [
     // https://github.com/hosseinmd/prettier-plugin-jsdoc
     'prettier-plugin-jsdoc',
 
-    // https://github.com/withastro/prettier-plugin-astro
-    'prettier-plugin-astro',
-
     // some plugins maybe added in the future
     // https://github.com/un-ts/prettier/tree/master/packages/sh
     // https://github.com/un-ts/prettier/tree/master/packages/pkg
-
-    // at last
-    // https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins
-    'prettier-plugin-tailwindcss',
 ];
 
 /** @type {import('prettier').Config} */
-module.exports = {
+const prettierConfig = {
     plugins: plugins.map((plugin) => require.resolve(plugin)),
 
     // official options
@@ -48,11 +50,26 @@ module.exports = {
             files: ['*.{yml,yaml,md}'],
             options: { tabWidth: 2 },
         },
-        {
-            files: '*.astro',
-            options: {
-                parser: 'astro',
-            },
-        },
     ],
 };
+
+// https://github.com/withastro/prettier-plugin-astro
+const astroPlugin = 'prettier-plugin-astro';
+if (isInstalled(astroPlugin)) {
+    plugins.push(astroPlugin);
+}
+prettierConfig.overrides.push({
+    files: '*.astro',
+    options: {
+        parser: 'astro',
+    },
+});
+
+// at last
+// https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins
+const tailwindcssPlugin = 'prettier-plugin-tailwindcss';
+if (isInstalled(tailwindcssPlugin)) {
+    plugins.push(tailwindcssPlugin);
+}
+
+module.exports = prettierConfig;
