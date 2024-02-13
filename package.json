@@ -15,7 +15,9 @@
         "prettier-plugin",
         "jsdoc",
         "xml",
-        "svg"
+        "svg",
+        "astro",
+        "tailwindcss"
     ],
     "publishConfig": {
         "registry": "https://registry.npmjs.org/",

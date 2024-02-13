@@ -24,7 +24,7 @@ const plugins = [
 
 /** @type {import('prettier').Config} */
 const prettierConfig = {
-    plugins: plugins.map((plugin) => require.resolve(plugin)),
+    plugins,
 
     // official options
     endOfLine: 'auto',
@@ -71,5 +71,7 @@ const tailwindcssPlugin = 'prettier-plugin-tailwindcss';
 if (isInstalled(tailwindcssPlugin)) {
     plugins.push(tailwindcssPlugin);
 }
+
+prettierConfig.plugins = prettierConfig.plugins.map((plugin) => require.resolve(plugin));
 
 module.exports = prettierConfig;
