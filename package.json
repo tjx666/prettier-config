@@ -2,6 +2,7 @@
     "name": "@yutengjing/prettier-config",
     "version": "1.1.2",
     "description": "my personal prettier config",
+    "packageManager": "pnpm@8.15.5",
     "author": {
         "name": "YuTengjing",
         "email": "ytj2713151713@gmail.com",

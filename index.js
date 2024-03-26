@@ -50,6 +50,12 @@ const prettierConfig = {
             files: ['*.{yml,yaml,md}'],
             options: { tabWidth: 2 },
         },
+        {
+            files: '*.code-snippets',
+            options: {
+                parser: 'jsonc',
+            },
+        },
     ],
 };
 
