@@ -2,7 +2,7 @@
     "name": "@yutengjing/prettier-config",
     "version": "1.2.0",
     "description": "my personal prettier config",
-    "packageManager": "pnpm@8.15.5",
+    "packageManager": "pnpm@9.1.0",
     "author": {
         "name": "YuTengjing",
         "email": "ytj2713151713@gmail.com",
@@ -36,15 +36,15 @@
         "prettier": "^3.2.5"
     },
     "dependencies": {
-        "@prettier/plugin-xml": "^3.3.1",
+        "@prettier/plugin-xml": "^3.4.1",
         "prettier-plugin-jsdoc": "^1.3.0"
     },
     "devDependencies": {
-        "@types/node": "^20.11.17",
-        "bumpp": "^9.3.0",
-        "mocha": "^10.3.0",
+        "@types/node": "^20.12.10",
+        "bumpp": "^9.4.1",
+        "mocha": "^10.4.0",
         "prettier-plugin-astro": "^0.13.0",
-        "prettier-plugin-tailwindcss": "^0.5.11",
+        "prettier-plugin-tailwindcss": "^0.5.14",
         "prettier": "^3.2.5"
     }
 }
