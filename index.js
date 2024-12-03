@@ -37,6 +37,8 @@ const prettierConfig = {
 
     // plugins options
     jsdocCommentLineStrategy: 'keep',
+    // https://github.com/hosseinmd/prettier-plugin-jsdoc/issues/86#issuecomment-782927935
+    tsdoc: true,
 
     overrides: [
         // https://github.com/prettier/prettier/issues/5322#issuecomment-1276302630
