@@ -37,6 +37,7 @@ const prettierConfig = {
 
     // plugins options
     jsdocCommentLineStrategy: 'keep',
+    jsdocPrintWidth: 120,
     // https://github.com/hosseinmd/prettier-plugin-jsdoc/issues/86#issuecomment-782927935
     tsdoc: true,
 
