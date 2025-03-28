@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function isInstalled(pkg) {
     try {
         require.resolve(pkg);
@@ -83,4 +87,4 @@ if (isInstalled(tailwindcssPlugin)) {
 
 prettierConfig.plugins = prettierConfig.plugins.map((plugin) => require.resolve(plugin));
 
-module.exports = prettierConfig;
+export default prettierConfig;
