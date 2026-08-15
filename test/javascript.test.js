@@ -1,6 +1,7 @@
-const assert = require('node:assert');
-const prettier = require('prettier');
-const options = require('../index');
+import assert from 'node:assert';
+import prettier from 'prettier';
+
+import options from '../index.js';
 
 function testFormat(source, result) {
     return async () => {
@@ -92,3 +93,5 @@ function f(a) {}
 `,
     ),
 );
+
+it('keeps empty jsdoc', testFormat('/** */\nconst value = 1', '/**/\nconst value = 1;\n'));
