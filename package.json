@@ -1,6 +1,6 @@
 {
     "name": "@yutengjing/prettier-config",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "my personal prettier config",
     "packageManager": "pnpm@11.21.0",
     "author": {
